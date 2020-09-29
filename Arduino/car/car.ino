@@ -37,29 +37,13 @@ void loop()
  
   cm = (duration/2) / 29.1;         // 將時間換算成距離 cm 或 inch  
   inches = (duration/2) / 74; 
-//
+
   if(cm <= 20){
     turn_left();
     }else{
       forward();
       }
 
-//  Serial.print("Distance : ");  
-////  Serial.print(inches);
-////  Serial.print("in,   ");
-//  Serial.print(cm);
-//  Serial.print("cm");
-//  Serial.println();
-//  
-//  delay(200);
-}
-//void car_initial(){
-// 
-//  void forward();
-//  void turn_left();
-//  void still();
-//  still();
-//  }
 void still(){
   digitalWrite(a1, 0);
   digitalWrite(b1, 0);
